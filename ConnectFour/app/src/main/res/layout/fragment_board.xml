@@ -19,6 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <!-- Button underneath textview, set to invisible -->
     <Button
         android:id="@+id/buttonTop"
@@ -31,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/optionsTitle" />
 
-    <!-- 7x6 Grid of Buttons, style attribute set, added padding as well-->
+    <!-- GridLayout for buttons -->
     <GridLayout
         android:id="@+id/boardGrid"
         android:layout_width="match_parent"
@@ -47,6 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonTop"
         app:layout_constraintVertical_bias="1.0">
+
         <!-- Buttons -->
         <Button
             style="@style/circle"
@@ -345,4 +347,16 @@
 
     </GridLayout>
 
+    <!-- Overlay WinningLineView above GridLayout -->
+    <com.example.connectfour.WinningLineView
+        android:id="@+id/winningLineView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/boardGrid"
+        app:layout_constraintEnd_toEndOf="@+id/boardGrid"
+        app:layout_constraintStart_toStartOf="@+id/boardGrid"
+        app:layout_constraintTop_toTopOf="@+id/boardGrid" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
