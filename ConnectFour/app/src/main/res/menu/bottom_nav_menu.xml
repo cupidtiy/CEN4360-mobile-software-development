@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Menu item for Connect Four Fragment -->
+    <item
+        android:id="@+id/boardFragment"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/connect_four" />
+
+    <!-- Menu item for Options Fragment -->
+    <item
+        android:id="@+id/gameOptionsFragment"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/options" />
+</menu>
